@@ -2,38 +2,38 @@
 <g clip-path="url(#clip0_26_38)">
 <rect width="2560" height="3375" fill="white"/>
 <g opacity="0.15" filter="url(#filter0_f_26_38)">
-<rect x="1381" y="1024" width="1293" height="2506" fill="black" fill-opacity="0.2"/>
+<rect x="1371" y="1024" width="1303" height="2506" fill="black" fill-opacity="0.2"/>
 </g>
 <g opacity="0.2" filter="url(#filter1_f_26_38)">
-<path d="M1381 1024L1054.99 -279H-85.5V1024H1381Z" fill="black" fill-opacity="0.4"/>
+<path d="M1370.5 1024L1044.49 -279H-96V1024H1370.5Z" fill="black" fill-opacity="0.4"/>
 </g>
 <g opacity="0.15" filter="url(#filter2_f_26_38)">
-<path d="M2674 235L1285 640.933L1382.59 1024H2674V235Z" fill="black" fill-opacity="0.2"/>
+<path d="M2560 235L1275 640L1369.93 1024H2560V235Z" fill="black" fill-opacity="0.2"/>
 </g>
 <g opacity="0.2" filter="url(#filter3_f_26_38)">
-<rect x="-135" y="1024" width="1516" height="2506" fill="black" fill-opacity="0.4"/>
+<rect x="-135" y="1024" width="1506" height="2506" fill="black" fill-opacity="0.4"/>
 </g>
 </g>
 <defs>
-<filter id="filter0_f_26_38" x="1377" y="1020" width="1301" height="2514" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f_26_38" x="1367" y="1020" width="1311" height="2514" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_26_38"/>
 </filter>
-<filter id="filter1_f_26_38" x="-105.5" y="-299" width="1506.5" height="1343" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_f_26_38" x="-100" y="-283" width="1474.5" height="1311" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_26_38"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_26_38"/>
 </filter>
-<filter id="filter2_f_26_38" x="1265" y="215" width="1429" height="829" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter2_f_26_38" x="1271" y="231" width="1293" height="797" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="0" result="effect1_foregroundBlur_26_38"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_26_38"/>
 </filter>
-<filter id="filter3_f_26_38" x="-155" y="1004" width="1556" height="2546" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter3_f_26_38" x="-139" y="1020" width="1514" height="2514" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_26_38"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_26_38"/>
 </filter>
 <clipPath id="clip0_26_38">
 <rect width="2560" height="3375" fill="white"/>
