@@ -1,3 +1,5 @@
+/* code universel*/
+
 body {
     background-image: url('media/texture_arriere_page.svg');
     background-size:cover;
@@ -18,7 +20,7 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 130vh;
+    height: 160vh;
 }
 
 h1 {
@@ -45,4 +47,31 @@ p {
 .scroll {
     height: 40vh;
     align-items: flex-start;
+}
+
+
+/* section a propos*/
+.propos {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "menu content";
+    grid-template-columns: 1fr 3fr;
+    column-gap: 90px;
+    padding: 50px;
+}
+
+.propos_profile {
+    grid-area: header;
+    text-align: center;
+}
+
+.img_profile {
+    grid-area: menu;
+    height: 30vw;
+}
+
+.desc_profile{
+    grid-area: content;
+    justify-items: center;
 }
