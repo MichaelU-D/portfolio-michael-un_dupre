@@ -75,3 +75,40 @@ p {
     grid-area: content;
     justify-items: center;
 }
+
+/*page projet*/
+.projet_imgs {
+    display: grid;
+    grid-template-areas:
+      "projet projet1 projet1"
+      "projet projet2 projet3"
+      "projet4 projet4 projet5";
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+    background-color: blue;
+}
+
+.projet1{
+    grid-area: projet;
+}
+
+.projet2{
+    grid-area: projet1;
+}
+
+.projet3{
+    grid-area: projet2;
+}
+
+.projet4{
+    grid-area: projet3;
+}
+
+.projet5{
+    grid-area: projet4;
+}
+
+.projet6{
+    grid-area: projet5;
+}
