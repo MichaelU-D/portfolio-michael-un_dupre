@@ -16,8 +16,55 @@ nav {
 
 .nav-buttons {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
+
+.nav-btn {
+  display: inline-block;
+  width: 12vw;
+  max-width: 160px;
+  aspect-ratio: 4 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*light et dark mode*/
+.theme-toggle { 
+    background-image: url('media/lune.svg');
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+}
+
+.accueil {
+  background-image: url('media/btn_acc.svg');
+}
+
+.accueil:hover {
+  background-image: url('media/btn_acc_hover.svg');
+}
+
+.projets {
+  background-image: url('media/btn_proj.svg');
+}
+
+.projets:hover {
+  background-image: url('media/btn_proj_hover.svg');
+}
+
+.contact {
+  background-image: url('media/btn_cont.svg');
+}
+
+.contact:hover {
+  background-image: url('media/btn_cont_hover.svg');
+}
+
+
+/* code pour l'accueil*/
 
 main {
     display: flex;
@@ -88,7 +135,7 @@ p {
     justify-items: center;
 }
 
-/*page projet*/
+/*code pour la page projet*/
 .projet_imgs {
     display: grid;
     grid-template-areas:
@@ -142,3 +189,4 @@ p {
     height: 100%;
     object-fit: fill; 
 }
+
