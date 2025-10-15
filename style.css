@@ -1,10 +1,10 @@
 /* code universel*/
 
-body {
-background-image: url('media/texture_arriere_page.svg');
+html, body {
+  background-image: url('media/texture_arriere_page.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 nav {
