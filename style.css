@@ -1,18 +1,22 @@
 /* code universel*/
 
 body {
-    background-image: url('media/texture_arriere_page.svg');
-    background-size:cover;
-    background-repeat:no-repeat;
+background-image: url('media/texture_arriere_page.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-nav{
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr auto auto auto;
-    margin:20px;
-    padding: 0px 2vw;
-    gap: 50px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4vw;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 2rem;
 }
 
 main {
