@@ -48,8 +48,17 @@ p {
 }
 
 .scroll {
-    height: 40vh;
+    height: 16vw;
     align-items: flex-start;
+    animation: bounce 2s infinite;
+    max-width: 70px;
+}
+
+/* animation du scroll*/
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(10px); }
+  60% { transform: translateY(5px); }
 }
 
 
