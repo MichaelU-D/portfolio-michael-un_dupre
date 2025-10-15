@@ -1,3 +1,5 @@
+/* code universel*/
+
 body {
     background-image: url('media/texture_arriere_page.svg');
     background-size:cover;
@@ -18,11 +20,10 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 130vh;
 }
 
 h1 {
-    font-size: 150px;
+    font-size: 10vw;
     font-family: 'Montserrat';
     font-weight: 200;
     color: #6C6C6C;
@@ -45,4 +46,86 @@ p {
 .scroll {
     height: 40vh;
     align-items: flex-start;
+}
+
+
+/* section a propos*/
+.propos {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "menu content";
+    grid-template-columns: 1fr 3fr;
+    column-gap: 5vw;
+    padding: 3vw;
+}
+
+.propos_profile {
+    grid-area: header;
+    text-align: center;
+}
+
+.img_profile {
+    grid-area: menu;
+    height: 30vw;
+}
+
+.desc_profile{
+    grid-area: content;
+    justify-items: center;
+}
+
+/*page projet*/
+.projet_imgs {
+    display: grid;
+    grid-template-areas:
+      "projet projet1 projet1"
+      "projet projet2 projet3"
+      "projet4 projet4 projet5";
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+    background-color: blue;
+}
+
+.projet1{
+    grid-area: projet;
+   width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+
+.projet2{
+    grid-area: projet1;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+
+.projet3{
+    grid-area: projet2;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+
+.projet4{
+    grid-area: projet3;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+
+.projet5{
+    grid-area: projet4;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+
+.projet6{
+    grid-area: projet5;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
 }
