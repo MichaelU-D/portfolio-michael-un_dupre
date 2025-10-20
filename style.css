@@ -177,3 +177,28 @@ p {
 .projet6 {
   grid-column: 3 / 4;
 }
+
+/*code pour la page projet presentation*/
+
+.projet-hero {
+  margin-bottom: 2vw;
+}
+
+.projet-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projet-infos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10vw;
+  margin-top: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+
