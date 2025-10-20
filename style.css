@@ -181,13 +181,24 @@ p {
 /*code pour la page projet presentation*/
 
 .projet-hero {
-  margin-bottom: 2vw;
+  margin-top: 2vw;   
+  width: 90vw;
 }
 
 .projet-image {
+  width: 100%;
+  height: 50vw;
+  object-fit: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
+}
+
+.projet-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
 }
 
 .projet-infos {
