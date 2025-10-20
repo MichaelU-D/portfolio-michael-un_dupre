@@ -1,6 +1,5 @@
 /* code universel*/
-
-html, body {
+body {
   background-image: url('media/texture_arriere_page.svg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -212,4 +211,62 @@ li {
   list-style: none;
 }
 
+/*code pour le dark mode*/
+body.dark-mode {
+  background-image: url('media/texture_arriere_page_dark.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/*bouton contraire*/
+body.dark-mode .accueil {
+  background-image: url('media/btn_acc_hover.svg');
+}
+
+body.dark-mode .projets {
+  background-image: url('media/btn_proj_hover.svg');
+}
+
+body.dark-mode .contact {
+  background-image: url('media/btn_cont_hover.svg');
+}
+
+body.dark-mode .theme-toggle {
+  background-image: url('media/soleil.svg');
+}
+
+body.dark-mode .accueil:hover {
+  background-image: url('media/btn_acc.svg');
+}
+
+body.dark-mode .projets:hover {
+  background-image: url('media/btn_proj.svg');
+}
+
+body.dark-mode .contact:hover {
+  background-image: url('media/btn_cont.svg');
+}
+
+/*text contraire*/
+body.dark-mode h1 {
+    font-size: 10vw;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    color: #D9D9D9;
+}
+
+body.dark-mode h2 {
+    font-size: 75px;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    color: #D9D9D9;
+}
+
+body.dark-mode p {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    color: #D9D9D9;
+}
 
