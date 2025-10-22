@@ -95,8 +95,12 @@ p {
 
 .scroll {
     height: 16vw;
-    align-items: flex-start;
-    max-width: 70px;
+    width: 10vw;
+    min-width: 150px;
+    min-height: 150px;
+    background-image: url('/media/scroll_logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* section a propos*/
@@ -123,6 +127,7 @@ p {
 .desc_profile{
     grid-area: content;
     justify-items: center;
+    font-size: larger;
 }
 
 /*code pour la page projet*/
@@ -212,31 +217,36 @@ body.dark-mode {
 
 /*bouton contraire*/
 body.dark-mode .accueil {
-  background-image: url('media/btn_acc_hover.svg');
+  background-image: url('/media/btn_acc_hover.svg');
 }
 
 body.dark-mode .projets {
-  background-image: url('media/btn_proj_hover.svg');
+  background-image: url('/media/btn_proj_hover.svg');
 }
 
 body.dark-mode .contact {
-  background-image: url('media/btn_cont_hover.svg');
+  background-image: url('/media/btn_cont_hover.svg');
 }
 
 body.dark-mode .theme-toggle {
-  background-image: url('media/soleil.svg');
+  background-image: url('/media/soleil.svg');
 }
 
 body.dark-mode .accueil:hover {
-  background-image: url('media/btn_acc.svg');
+  background-image: url('/media/btn_acc.svg');
 }
 
 body.dark-mode .projets:hover {
-  background-image: url('media/btn_proj.svg');
+  background-image: url('/media/btn_proj.svg');
 }
 
 body.dark-mode .contact:hover {
-  background-image: url('media/btn_cont.svg');
+  background-image: url('/media/btn_cont.svg');
+}
+
+body.dark-mode .scroll {
+  background-image: url('/media/scroll_logo_darkmode.svg');
+  background-repeat: no-repeat;
 }
 
 /*text contraire*/
