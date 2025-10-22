@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Grotte Extraterrestre",
+    "description": ".",
+    "image": "/media/projet/Grotte_extratterreste.jpg",
+    "tools": ["maya", "unity"],
+    "role": ["modélisation", "set dressing"],
+    "mention": ["Michael Un Dupré", "Félix Lavoie", "Ihab Mouhajer"]
+  },
+  {
+    "id": 2,
+    "title": "Chase à la Glace",
+    "description": "",
+    "image": "",
+    "tools": ["Unity"],
+    "role": ["code", "set dressing"],
+    "mention": ["Michael Un Dupré"]
+  }
+]
