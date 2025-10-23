@@ -147,6 +147,10 @@ p {
   height: 15vw;
 }
 
+.gallery:hover {
+  transform: scale(1.01);
+}
+
 .projet1 {
  grid-row: 1 / 3;
  height: auto;

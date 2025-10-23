@@ -48,7 +48,6 @@ function afficherProjets(projets) {
   });
 }
 
-
 const app = Vue.createApp({
   data() {
     return {

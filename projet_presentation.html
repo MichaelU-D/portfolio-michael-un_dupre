@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projet sélectionné</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <!-- navbar -->
     <nav>
       <img class="logo" src="media/logo_mika.svg" width="150" />
       <div class="nav-buttons">
-        <a class="nav-btn accueil"></a>
+        <a class="nav-btn accueil" href="index.html"></a>
         <a class="nav-btn projets"></a>
         <a class="nav-btn contact"></a>
         <a class="nav-btn theme-toggle"></a>
@@ -19,17 +20,18 @@
     </nav>
 
     <!-- contenue -->
-      <main id="app">
+  <main id="app">
     <card 
-      v-if="selectedProject"
-      :ptitre="selectedProject.title"
+      v-for="card in selectedProject"
+      :ptitle="selectedProject.title"
       :pdesc="selectedProject.description"
       :pimg="selectedProject.image"
-      :ptools="selectedProject.tools"
+      :ptool="selectedProject.tools"
       :prole="selectedProject.role"
       :pmention="selectedProject.mention">
     </card>
   </main>
-</body>
+</body>  
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="script.js"></script>
 </html>
