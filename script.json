@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Grotte Extraterrestre",
-    "description": ".",
+    "description": "Dans le cadre d'un projet scolaire, mon équipe, composée de Félix Lavoie et Ihab Mouhajer et moi-même, a créé une scène 3D représentant une grotte extraterrestre remplie de vie, avec des cristaux et des plantes. Nous avons utilisé Maya pour la modélisation et Unity pour le rendu. J'ai réalisé le modèle de la grande plante, les petites roches avec des cristaux et les caisses. J'ai également pris en charge la mise en scène.",
     "image": "/media/projet/Grotte_extratterreste.jpg",
     "tools": ["maya", "unity"],
     "role": ["modélisation", "set dressing"],
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Chase à la Glace",
-    "description": "",
+    "description": "Dans le cadre d'un projet scolaire réalisé sur Unity, le but est de collecter les six crèmes glacées. J'ai codé le jeu et réalisé la mise en scène.",
     "image": "/media/projet/creme.png",
     "tools": ["Unity"],
     "role": ["code", "set dressing"],
@@ -29,10 +29,28 @@
   {
     "id": 4,
     "title": "grimoire",
-    "description": "",
+    "description": "C'est un exercice que j'ai fait pour apprendre comment bake sur substance painter. La modélisation a été fait sur Blender",
     "image": "/media/projet/grimoire.jpg",
-    "tools": ["Unity", "maya"],
+    "tools": ["blender", "substance painter"],
     "role": ["modélisation", "texture", "rendu"],
     "mention": ["Michael Un Dupré"]
+  },
+  {
+    "id": 4,
+    "title": "grimoire",
+    "description": "C'est un exercice que j'ai fait pour apprendre comment bake sur substance painter. La modélisation a été fait sur Blender",
+    "image": "/media/projet/grimoire.jpg",
+    "tools": ["blender", "substance painter"],
+    "role": ["modélisation", "texture", "rendu"],
+    "mention": ["Michael Un Dupré"]
+  },
+  {
+    "id": 5,
+    "title": "Episode",
+    "description": "",
+    "image": "/media/projet/episode.png",
+    "tools": ["Davinci", "reaper", "After Effect"],
+    "role": ["filmage", "montage", "prise de sons"],
+    "mention": ["Michael Un Dupré", "Félix Lavoie", "Joshua Gonzalez-Barrera"]
   }
 ]  
