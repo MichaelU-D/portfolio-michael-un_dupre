@@ -141,7 +141,6 @@ p {
 }
 
 .gallery {
-  background-image: url('media/placeholder.png');
   background-size: cover;
   background-position: center;
   border-radius: 10px;

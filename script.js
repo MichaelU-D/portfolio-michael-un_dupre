@@ -20,3 +20,31 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power1.inOut"
   });
 });
+
+
+// fetch du json
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('script.json')
+  .then(response => response.json())
+    .then(data => {
+      afficherProjets(data);
+    })
+});
+
+function afficherProjets(projets) {
+  const galleries = document.querySelectorAll('.gallery');
+
+  projets.forEach((projet, index) => {
+    const div = galleries[index];
+    if (!div) return;
+
+    // chercher l'image
+    div.style.backgroundImage = `url('${projet.image}')`;
+
+    // amene sur la page du projet au click
+    div.addEventListener('click', () => {
+      window.location.href = `projet.html?id=${projet.id}`;
+    });
+  });
+}
+
