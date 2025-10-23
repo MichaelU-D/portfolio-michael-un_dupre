@@ -10,11 +10,29 @@
   },
   {
     "id": 2,
+    "title": "Fantésia",
+    "description": "",
+    "image": "/media/projet/fantesia.png",
+    "tools": ["Unity", "maya"],
+    "role": ["animation", "set dressing"],
+    "mention": ["Michael Un Dupré", "Ihab Mouhajer"]
+  },  
+  {
+    "id": 3,
     "title": "Chase à la Glace",
     "description": "",
-    "image": "/media/projet/Grotte_extratterreste.jpg",
+    "image": "/media/projet/creme.png",
     "tools": ["Unity"],
     "role": ["code", "set dressing"],
     "mention": ["Michael Un Dupré"]
+  },
+  {
+    "id": 4,
+    "title": "grimoire",
+    "description": "",
+    "image": "/media/projet/grimoire.jpg",
+    "tools": ["Unity", "maya"],
+    "role": ["modélisation", "texture", "rendu"],
+    "mention": ["Michael Un Dupré"]
   }
-]
+]  
