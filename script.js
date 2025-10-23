@@ -43,8 +43,55 @@ function afficherProjets(projets) {
 
     // amene sur la page du projet au click
     div.addEventListener('click', () => {
-      window.location.href = `projet.html?id=${projet.id}`;
+      window.location.href = `projet_presentation.html?id=${projet.id}`;
     });
   });
 }
 
+
+const app = Vue.createApp({
+  data() {
+    return {
+      selectedProject: null
+    };
+  },
+});
+
+app.component('card', {
+  props: ['ptitle', 'pdesc', 'pimg', 'ptool', 'prole', 'pmention'],
+  template: `
+      <section class="projet-hero">
+          <img class="projet-image" :src="pimg">
+      </section>
+      <section class="projet-description">
+        <p>
+          {{ pdesc }}
+        </p>
+      </section>
+
+      <section class="projet-infos">
+        <div class="info-outils">
+          <h3>outils</h3>
+          <ul>
+            <li v-for="tool in ptool">{{ tool }}</li>
+          </ul>
+        </div>
+
+        <div class="info-role">
+          <h3>rôle</h3>
+            <ul>
+              <li v-for="role in prole">{{ role }}</li>
+          </ul>
+        </div>
+
+        <div class="info-mention">
+          <h3>mention</h3>
+            <ul>
+              <li v-for="m in pmention">{{ m }}</li>
+          </ul>
+        </div>
+      </section>
+  `
+});
+
+app.mount("#app");

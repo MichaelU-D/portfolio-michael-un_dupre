@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "Fantésia",
-    "description": "",
+    "description": "Un projet dans le cadre scolaire réutilisant quelques modèles de la grotte extraterrestre, comprenant une courte animation représentant une fée se promenant dans une forêt enchantée. J'ai travaillé en collaboration avec Ihab Mouhajer sur la mise en scène.",
     "image": "/media/projet/fantesia.png",
     "tools": ["Unity", "maya"],
     "role": ["animation", "set dressing"],

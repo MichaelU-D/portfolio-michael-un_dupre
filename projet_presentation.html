@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet sélectionné</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+      <img class="logo" src="media/logo_mika.svg" width="150" />
+      <div class="nav-buttons">
+        <a class="nav-btn accueil"></a>
+        <a class="nav-btn projets"></a>
+        <a class="nav-btn contact"></a>
+        <a class="nav-btn theme-toggle"></a>
+      </div>
+    </nav>
+
+    <!-- contenue -->
+      <main id="app">
+    <card 
+      v-if="selectedProject"
+      :ptitre="selectedProject.title"
+      :pdesc="selectedProject.description"
+      :pimg="selectedProject.image"
+      :ptools="selectedProject.tools"
+      :prole="selectedProject.role"
+      :pmention="selectedProject.mention">
+    </card>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
