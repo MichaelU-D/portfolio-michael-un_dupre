@@ -21,33 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-// fetch du json
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('script.json')
-  .then(response => response.json())
-    .then(data => {
-      afficherProjets(data);
-    })
-});
-
-function afficherProjets(projets) {
-  const galleries = document.querySelectorAll('.gallery');
-
-  projets.forEach((projet, index) => {
-    const div = galleries[index];
-    if (!div) return;
-
-    // chercher l'image
-    div.style.backgroundImage = `url('${projet.image}')`;
-
-    // amene sur la page du projet au click
-    div.addEventListener('click', () => {
-      window.location.href = `projet_presentation.html?id=${projet.id}`;
-    });
-  });
-}
-
+// app vue
 const app = Vue.createApp({
   data() {
     return {
@@ -56,17 +30,42 @@ const app = Vue.createApp({
   },
 
   async mounted() {
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("id");
-
+    // fetch du json
     try {
-      const res = await fetch("script.json");
+      const res = await fetch('script.json');
       const data = await res.json();
-      this.project = data.find(p => p.id == id);
+
+      const galleries = document.querySelectorAll('.gallery');
+
+      if (galleries.length) {
+        this.projets = data;
+        this.afficherProjets(this.projets, galleries);
+      } else {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        this.project = data.find(p => p.id == id);
+      }
     } catch (error) {
-      console.error("Erreur lors du chargement du projet :", error);
+      console.error("Erreur fetch JSON:", error);
     }
+  },
+
+  methods: {
+    afficherProjets(projets, galleries) {
+      projets.forEach((projet, index) => {
+        const div = galleries[index];
+        if (!div) return;
+
+        // l'image du projet
+        div.style.backgroundImage = `url('${projet.image}')`;
+
+        // ouvrire la page d'un projet
+        div.addEventListener('click', () => {
+          window.location.href = `projet_presentation.html?id=${projet.id}`;
+        });
+      });
+    },
   },
 });
 
-app.mount("#app");
+app.mount('#app');
