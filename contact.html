@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <img class="logo" src="media/logo_mika.svg" width="150" />
+    <div class="nav-buttons">
+      <a class="nav-btn accueil" href="index.html"></a>
+      <a class="nav-btn projets" href="projets.html"></a>
+      <a class="nav-btn contact" href="contact.html"></a>
+      <a class="nav-btn theme-toggle"></a>
+    </div>
+  </nav>
+
+  <!-- Contact Form -->
+  <main id="app">
+    <section class="section-contact">
+      <h1>Contactez</h1>
+      <form>
+        <div class="group">
+          <label>Prénom</label>
+          <input id="Prénom">
+        </div>
+
+        <div class="group">
+          <label>Nom</label>
+          <input id="Nom">
+        </div>
+
+        <div class="group">
+          <label>Courriel</label>
+          <input id="email">
+        </div>
+
+        <div class="group">
+          <label>Message</label>
+          <textarea id="message"></textarea>
+        </div>
+
+        <button type="Envoyer">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
