@@ -51,46 +51,22 @@ function afficherProjets(projets) {
 const app = Vue.createApp({
   data() {
     return {
-      selectedProject: null
+      project: null,
     };
   },
-});
 
-app.component('card', {
-  props: ['ptitle', 'pdesc', 'pimg', 'ptool', 'prole', 'pmention'],
-  template: `
-      <section class="projet-hero">
-          <img class="projet-image" :src="pimg">
-      </section>
-      <section class="projet-description">
-        <p>
-          {{ pdesc }}
-        </p>
-      </section>
+  async mounted() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
 
-      <section class="projet-infos">
-        <div class="info-outils">
-          <h3>outils</h3>
-          <ul>
-            <li v-for="tool in ptool">{{ tool }}</li>
-          </ul>
-        </div>
-
-        <div class="info-role">
-          <h3>rôle</h3>
-            <ul>
-              <li v-for="role in prole">{{ role }}</li>
-          </ul>
-        </div>
-
-        <div class="info-mention">
-          <h3>mention</h3>
-            <ul>
-              <li v-for="m in pmention">{{ m }}</li>
-          </ul>
-        </div>
-      </section>
-  `
+    try {
+      const res = await fetch("script.json");
+      const data = await res.json();
+      this.project = data.find(p => p.id == id);
+    } catch (error) {
+      console.error("Erreur lors du chargement du projet :", error);
+    }
+  },
 });
 
 app.mount("#app");

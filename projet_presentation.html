@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projet sélectionné</title>
   <link rel="stylesheet" href="style.css">
-
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
     <!-- navbar -->
@@ -13,7 +13,7 @@
       <img class="logo" src="media/logo_mika.svg" width="150" />
       <div class="nav-buttons">
         <a class="nav-btn accueil" href="index.html"></a>
-        <a class="nav-btn projets"></a>
+        <a class="nav-btn projets" href="projets.html"></a>
         <a class="nav-btn contact"></a>
         <a class="nav-btn theme-toggle"></a>
       </div>
@@ -21,17 +21,42 @@
 
     <!-- contenue -->
   <main id="app">
-    <card 
-      v-for="card in selectedProject"
-      :ptitle="selectedProject.title"
-      :pdesc="selectedProject.description"
-      :pimg="selectedProject.image"
-      :ptool="selectedProject.tools"
-      :prole="selectedProject.role"
-      :pmention="selectedProject.mention">
-    </card>
+    <div v-if="project">
+      <section class="projet-hero">
+        <img class="projet-image" :src="project.image" :alt="project.title">
+      </section>
+
+      <section class="projet-description">
+        <h1>{{ project.title }}</h1>
+        <p>{{ project.description }}</p>
+      </section>
+
+      <section class="projet-infos">
+        <div class="info-outils">
+          <ul>
+            <h3>Outils</h3>
+            <li v-for="tool in project.tools" :key="tool">{{ tool }}</li>
+          </ul>
+        </div>
+
+        <div class="info-role">
+          <ul>
+            <h3>Rôle</h3>
+            <li v-for="role in project.role">{{ role }}</li>
+          </ul>
+        </div>
+
+        <div class="info-mention">
+          <ul> 
+            <h3>Mention</h3>
+            <li v-for="mention in project.mention">{{ mention }}</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <p v-else>Chargement du projet...</p>
   </main>
 </body>  
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="script.js"></script>
 </html>
