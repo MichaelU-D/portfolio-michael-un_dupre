@@ -89,14 +89,14 @@ main {
 }
 
 h1 {
-    font-size: 10vw;
+    font-size: clamp(50px, 10vw, 200px);
     font-family: Monsterrat;
     font-weight: 200;
     color: #6C6C6C;
 }
 
 h2 {
-    font-size: 3vw;
+    font-size: clamp(50px, 3vw, 100px);
     font-family: Jost;
     font-weight: 100;
     color: #6C6C6C;
@@ -470,12 +470,12 @@ body.dark-mode button:hover {
     align-items: center;
     text-align: center;
     gap: 2rem;
-    margin-top: 40vh;
+    margin-top: 28vh;
   }
 
   .img_profile {
     width: 100vw;
-    height: 60vw;
+    height: 50vw;
     max-height: 60vh;
     object-fit: cover; 
   }
