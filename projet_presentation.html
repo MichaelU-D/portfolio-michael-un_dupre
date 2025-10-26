@@ -35,6 +35,12 @@
         <p>{{ project.description }}</p>
       </section>
 
+      <section class="projet-extra-images" v-if="project.id === 4 && project.image_desc && project.image_desc.length">
+        <div class="extra-images">
+          <img  class="images" v-for="img in project.image_desc" :src="img">
+        </div>
+      </section>
+
       <section class="projet-infos">
         <div class="info-outils">
           <ul>
