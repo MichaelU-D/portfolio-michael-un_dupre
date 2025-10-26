@@ -147,6 +147,42 @@ p {
   color: #6C6C6C;
 }
 
+.competences {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.comp {
+  display: inline-block;
+  width: 12vw;
+  max-width: 200px;
+  aspect-ratio: 4 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blender {
+  background-image: url('media/blender_logo.svg');
+}
+
+.unity {
+  background-image: url('media/unity_logo.svg');
+}
+
+.reaper {
+  background-image: url('media/reaper_logo.svg');
+}
+
+.maya {
+  background-image: url('media/maya_logo.svg');
+}
+
+.adobe {
+  background-image: url('media/adobe_logo.svg');
+}
+
 /*code pour la page projet*/
 
 .projets-img {
@@ -359,6 +395,28 @@ body.dark-mode .contact:hover {
 body.dark-mode .scroll {
   background-image: url('/media/scroll_logo_darkmode.svg');
   background-repeat: no-repeat;
+}
+
+
+/*logo competence contraire*/
+body.dark-mode .blender {
+  background-image: url('media/blender_logo_dark.svg');
+}
+
+body.dark-mode .unity {
+  background-image: url('media/unity_logo_dark.svg');
+}
+
+body.dark-mode .reaper {
+  background-image: url('media/reaper_logo_dark.svg');
+}
+
+body.dark-mode .maya {
+  background-image: url('media/maya_logo_dark.svg');
+}
+
+body.dark-mode .adobe {
+  background-image: url('media/adobe_logo_dark.svg');
 }
 
 /*text contraire*/

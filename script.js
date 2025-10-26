@@ -27,12 +27,18 @@ const app = Vue.createApp({
 
   async mounted() {
     const themeBtn = document.querySelector('.theme-toggle');
+    const saveTheme = localStorage.getItem('darkMode');
 
+    if (saveTheme !== null) {
+      this.isDarkMode = saveTheme === 'true';
+      document.body.classList.toggle('dark-mode', this.isDarkMode);
+    }
+    
     if (themeBtn) {
       themeBtn.addEventListener('click', () => {
-        this.isDarkMode = !this.isDarkMode;
-        document.body.classList.toggle('dark-mode', this.isDarkMode);
-        localStorage.setItem('darkMode', this.isDarkMode);
+        this.DarkMode = !this.DarkMode;
+        document.body.classList.toggle('dark-mode', this.DarkMode);
+        localStorage.setItem('darkMode', this.DarkMode);
       });
     }
 
