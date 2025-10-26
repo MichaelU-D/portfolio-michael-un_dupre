@@ -1,13 +1,3 @@
-// darkmode
-document.addEventListener('DOMContentLoaded', () => {
-  const themeBtn = document.querySelector('.theme-toggle');
-  const body = document.body;
-
-  themeBtn.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-  });
-});
-
 // anime gsap
 document.addEventListener("DOMContentLoaded", () => {
   const scrollLogo = document.querySelector(".scroll");
@@ -36,6 +26,16 @@ const app = Vue.createApp({
   },
 
   async mounted() {
+    const themeBtn = document.querySelector('.theme-toggle');
+
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        this.isDarkMode = !this.isDarkMode;
+        document.body.classList.toggle('dark-mode', this.isDarkMode);
+        localStorage.setItem('darkMode', this.isDarkMode);
+      });
+    }
+
     // fetch du json
     try {
       const res = await fetch('script.json');
@@ -74,4 +74,4 @@ const app = Vue.createApp({
   },
 });
 
-app.mount('#app');
+app.mount('body');

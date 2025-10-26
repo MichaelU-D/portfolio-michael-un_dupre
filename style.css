@@ -196,8 +196,8 @@ p {
 /*code pour la page projet presentation*/
 
 .projet-hero {
-  margin-top: 2vw;   
   width: 90vw;
+  margin: 2vw auto;
 }
 
 .projet-image {
@@ -254,7 +254,6 @@ li {
   margin-bottom: 1rem;
 }
 
-/* container for the images */
 .projet-extra-images .extra-images {
   display: flex;
   justify-content: center;
@@ -265,7 +264,6 @@ li {
   padding-bottom: 1rem;
 }
 
-/* individual images */
 .projet-extra-images .extra-images .images {
   width: 30%;
   max-width: 500px;
