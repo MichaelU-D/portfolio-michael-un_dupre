@@ -41,7 +41,6 @@ nav {
   background-position: center;
 }
 
-/*light et dark mode*/
 .theme-toggle { 
     background-image: url('media/lune.svg');
 }
@@ -73,6 +72,37 @@ nav {
 .contact:hover {
   background-image: url('media/btn_cont_hover.svg');
 }
+
+/* pas de burger en destop*/
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav-buttons {
+    display: none; 
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 7vw;
+    right: 20vw;
+  }
+
+  .nav-buttons.active {
+    display: flex;
+  }
+
+  .nav-btn {
+    width: 50vw;
+    min-width: 100px;
+  }
+}
+
 
 
 /* code pour l'accueil*/

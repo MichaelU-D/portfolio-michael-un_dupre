@@ -21,6 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// burger
+function toggleMenu() {
+    const navButtons = document.querySelector('.nav-buttons');
+    navButtons.classList.toggle('active');
+  }
+
 // app vue
 const app = Vue.createApp({
   data() {
