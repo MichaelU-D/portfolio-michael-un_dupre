@@ -98,7 +98,7 @@ h1 {
 h2 {
     font-size: clamp(50px, 3vw, 100px);
     font-family: Jost;
-    font-weight: 100;
+    font-weight: 200;
     color: #6C6C6C;
     margin: 0px;
 }
@@ -181,6 +181,10 @@ p {
 
 .adobe {
   background-image: url('media/adobe_logo.svg');
+}
+
+.visual {
+  background-image: url('media/visual_logo.svg');
 }
 
 /*code pour la page projet*/
@@ -419,6 +423,10 @@ body.dark-mode .adobe {
   background-image: url('media/adobe_logo_dark.svg');
 }
 
+body.dark-mode .visual {
+  background-image: url('media/visual_logo_dark.svg');
+}
+
 /*text contraire*/
 body.dark-mode h1 {
     font-size: clamp(50px, 10vw, 200px);
@@ -567,6 +575,18 @@ body.dark-mode button:hover {
   .desc_profile {
     width: 90%;
     margin: 0 auto;
+  }
+
+  .competences {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+
+  .comp {
+    display: flex;
+    width: 50vw;
+    margin: auto auto;
   }
 
 /* page projet */
