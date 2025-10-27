@@ -41,17 +41,17 @@
   },
   {
     "id": 5,
-    "title": "grimoire",
-    "description": "C'est un exercice que j'ai fait pour apprendre comment bake sur substance painter. La modélisation a été fait sur Blender",
-    "image": "/media/projet/grimoire.jpg",
-    "tools": ["blender", "substance painter"],
-    "role": ["modélisation", "texture", "rendu"],
+    "title": "Épée Muichiro",
+    "description": "C'est un exercice que j'ai fait pour le plaisir, j'ai modeler l'épée de Muichiro de la série Demon Slayer",
+    "image": "/media/projet/mui_sword.png",
+    "tools": ["blender"],
+    "role": ["modélisation"],
     "mention": ["Michael Un Dupré"]
   },
   {
     "id": 6,
     "title": "Episode",
-    "description": "",
+    "description": "Alex (21) regarde sa télévision sur son canapé. Il commence à avoir des épisodes de psychose. Après ces épisodes, il revient à la normale et se réassis sur le canapé (boucle). Un projet dans le cadre scolaire, Réalisé par Michael Un Dupré, Félix Lavoie et Joshua Gonzalez-Barrera au studio du Collège Montmorency, nous avons utilisé reaper pour le son, Davinci et After Effect pour le montage vidéo.",
     "image": "/media/projet/episode.png",
     "video": "/media/projet/episode.mp4",
     "tools": ["Davinci", "reaper", "After Effect"],
