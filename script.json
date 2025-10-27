@@ -13,6 +13,7 @@
     "title": "Fantésia",
     "description": "Un projet dans le cadre scolaire réutilisant quelques modèles de la grotte extraterrestre, comprenant une courte animation représentant une fée se promenant dans une forêt enchantée. J'ai travaillé en collaboration avec Ihab Mouhajer sur la mise en scène.",
     "image": "/media/projet/fantesia.png",
+    "video": "/media/projet/fantesia.mp4",
     "tools": ["Unity", "maya"],
     "role": ["animation", "set dressing"],
     "mention": ["Michael Un Dupré", "Ihab Mouhajer"]
@@ -22,6 +23,7 @@
     "title": "Chase à la Glace",
     "description": "Dans le cadre d'un projet scolaire réalisé sur Unity, le but est de collecter les six crèmes glacées. J'ai codé le jeu et réalisé la mise en scène.",
     "image": "/media/projet/creme.png",
+    "video": "/media/projet/chase_creme.mp4",
     "tools": ["Unity"],
     "role": ["code", "set dressing"],
     "mention": ["Michael Un Dupré"]
@@ -51,6 +53,7 @@
     "title": "Episode",
     "description": "",
     "image": "/media/projet/episode.png",
+    "video": "/media/projet/episode.mp4",
     "tools": ["Davinci", "reaper", "After Effect"],
     "role": ["filmage", "montage", "prise de sons"],
     "mention": ["Michael Un Dupré", "Félix Lavoie", "Joshua Gonzalez-Barrera"]

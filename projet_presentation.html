@@ -26,8 +26,11 @@
     <!-- contenue -->
   <main id="app">
     <div v-if="project">
+
+         <!-- s'il a une video pas d'image -->
       <section class="projet-hero">
-        <img class="projet-image" :src="project.image" :alt="project.title">
+        <video v-if="project.video" class="projet-image" :src="project.video" autoplay muted loop ></video>
+        <img v-else class="projet-image" :src="project.image">
       </section>
 
       <section class="projet-description">

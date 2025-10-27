@@ -44,8 +44,8 @@ const app = Vue.createApp({
 
     // fetch du json
     try {
-      const res = await fetch('script.json');
-      const data = await res.json();
+      const response = await fetch('script.json');
+      const data = await response.json();
 
       const galleries = document.querySelectorAll('.gallery');
 
