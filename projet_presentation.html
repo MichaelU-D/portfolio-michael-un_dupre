@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projet sélectionné</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet sélectionné</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
     <!-- navbar -->
     <nav>
       <img class="logo" src="media/logo_mika.svg" width="150" />
@@ -24,54 +24,56 @@
     </nav>
 
     <!-- contenue -->
-  <main id="app">
-    <div v-if="project">
+    <main id="app">
+      <div v-if="project">
+        <!-- s'il a une video pas d'image -->
+        <section class="projet-hero">
+          <video v-if="project.video" class="projet-image" :src="project.video" autoplay muted loop></video>
+          <img v-else class="projet-image" :src="project.image" />
+        </section>
 
-         <!-- s'il a une video pas d'image -->
-      <section class="projet-hero">
-        <video v-if="project.video" class="projet-image" :src="project.video" autoplay muted loop ></video>
-        <img v-else class="projet-image" :src="project.image">
-      </section>
+        <section class="projet-description">
+          <h1>{{ project.title }}</h1>
+          <p>{{ project.description }}</p>
+        </section>
 
-      <section class="projet-description">
-        <h1>{{ project.title }}</h1>
-        <p>{{ project.description }}</p>
-      </section>
+        <section
+          class="projet-extra-images"
+          v-if="project.id === 4 && project.image_desc && project.image_desc.length"
+        >
+          <div class="extra-images">
+            <img class="images" v-for="img in project.image_desc" :src="img" />
+          </div>
+        </section>
 
-      <section class="projet-extra-images" v-if="project.id === 4 && project.image_desc && project.image_desc.length">
-        <div class="extra-images">
-          <img  class="images" v-for="img in project.image_desc" :src="img">
-        </div>
-      </section>
+        <section class="projet-description">
+          <p>{{ project.description_extra }}</p>
+        </section>
 
-<section class="projet-description"> 
-      <p>{{ project.description_extra }}</p>
-</section>
+        <section class="projet-infos">
+          <div class="info-outils">
+            <ul>
+              <h3>Outils</h3>
+              <li v-for="tool in project.tools" :key="tool">{{ tool }}</li>
+            </ul>
+          </div>
 
-      <section class="projet-infos">
-        <div class="info-outils">
-          <ul>
-            <h3>Outils</h3>
-            <li v-for="tool in project.tools" :key="tool">{{ tool }}</li>
-          </ul>
-        </div>
+          <div class="info-role">
+            <ul>
+              <h3>Rôle</h3>
+              <li v-for="role in project.role">{{ role }}</li>
+            </ul>
+          </div>
 
-        <div class="info-role">
-          <ul>
-            <h3>Rôle</h3>
-            <li v-for="role in project.role">{{ role }}</li>
-          </ul>
-        </div>
-
-        <div class="info-mention">
-          <ul> 
-            <h3>Mention</h3>
-            <li v-for="mention in project.mention">{{ mention }}</li>
-          </ul>
-        </div>
-      </section>
-    </div>
-  </main>
-</body>  
-<script src="script.js"></script>
+          <div class="info-mention">
+            <ul>
+              <h3>Mention</h3>
+              <li v-for="mention in project.mention">{{ mention }}</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
 </html>
