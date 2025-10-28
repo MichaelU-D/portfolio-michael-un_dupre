@@ -33,7 +33,7 @@
     "title": "grimoire",
     "description": "C'est un exercice que j'ai fait pour apprendre comment bake sur substance painter. La modélisation a été fait sur Blender",
     "image": "media/projet/grimoire.jpg",
-    "image_desc": ["media/projet/grimoire_wireframe.jpg", "/media/projet/notexturegrimoire.jpg","/media/projet/grimore_extravue.jpg"],
+    "image_desc": ["media/projet/grimoire_wireframe.jpg", "media/projet/notexturegrimoire.jpg","media/projet/grimore_extravue.jpg"],
     "description_extra": "PROCESSUS : pour commencer, j’ai dû faire un modèle de base du grimoire avec le moin de polygones possible. Ensuite, on passe à une version high, une version avec plus de détails. Pour ajouter ces détails, je suis allé sur Substance Painter pour ensuite baker le high sur le low, puis passer à la création de textures sur Substance Painter.",
     "tools": ["blender", "substance painter"],
     "role": ["modélisation", "texture", "rendu"],
