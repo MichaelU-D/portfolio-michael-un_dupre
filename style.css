@@ -12,7 +12,7 @@
 
 /* code universel*/
 body {
-  background-image: url('/media/texture_arriere_page.svg');
+  background-image: url('media/texture_arriere_page.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -174,27 +174,27 @@ p {
 }
 
 .blender {
-  background-image: url('/media/blender_logo.svg');
+  background-image: url('./media/blender_logo.svg');
 }
 
 .unity {
-  background-image: url('/media/unity_logo.svg');
+  background-image: url('media/unity_logo.svg');
 }
 
 .reaper {
-  background-image: url('/media/reaper_logo.svg');
+  background-image: url('media/reaper_logo.svg');
 }
 
 .maya {
-  background-image: url('/media/maya_logo.svg');
+  background-image: url('media/maya_logo.svg');
 }
 
 .adobe {
-  background-image: url('/media/adobe_logo.svg');
+  background-image: url('media/adobe_logo.svg');
 }
 
 .visual {
-  background-image: url('/media/visual_logo.svg');
+  background-image: url('media/visual_logo.svg');
 }
 
 /*code pour la page projet*/
@@ -371,7 +371,7 @@ button:hover {
 
 /*code pour le dark mode*/
 body.dark-mode {
-  background-image: url('/media/texture_arriere_page_dark.svg');
+  background-image: url('media/texture_arriere_page_dark.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -379,62 +379,62 @@ body.dark-mode {
 
 /*bouton contraire*/
 body.dark-mode .accueil {
-  background-image: url('/media/btn_acc_hover.svg');
+  background-image: url('media/btn_acc_hover.svg');
 }
 
 body.dark-mode .projets {
-  background-image: url('/media/btn_proj_hover.svg');
+  background-image: url('media/btn_proj_hover.svg');
 }
 
 body.dark-mode .contact {
-  background-image: url('/media/btn_cont_hover.svg');
+  background-image: url('media/btn_cont_hover.svg');
 }
 
 body.dark-mode .theme-toggle {
-  background-image: url('/media/soleil.svg');
+  background-image: url('media/soleil.svg');
 }
 
 body.dark-mode .accueil:hover {
-  background-image: url('/media/btn_acc.svg');
+  background-image: url('media/btn_acc.svg');
 }
 
 body.dark-mode .projets:hover {
-  background-image: url('/media/btn_proj.svg');
+  background-image: url('media/btn_proj.svg');
 }
 
 body.dark-mode .contact:hover {
-  background-image: url('/media/btn_cont.svg');
+  background-image: url('media/btn_cont.svg');
 }
 
 body.dark-mode .scroll {
-  background-image: url('/media/scroll_logo_darkmode.svg');
+  background-image: url('media/scroll_logo_darkmode.svg');
   background-repeat: no-repeat;
 }
 
 
 /*logo competence contraire*/
 body.dark-mode .blender {
-  background-image: url('/media/blender_logo_dark.svg');
+  background-image: url('media/blender_logo_dark.svg');
 }
 
 body.dark-mode .unity {
-  background-image: url('/media/unity_logo_dark.svg');
+  background-image: url('media/unity_logo_dark.svg');
 }
 
 body.dark-mode .reaper {
-  background-image: url('/media/reaper_logo_dark.svg');
+  background-image: url('media/reaper_logo_dark.svg');
 }
 
 body.dark-mode .maya {
-  background-image: url('/media/maya_logo_dark.svg');
+  background-image: url('media/maya_logo_dark.svg');
 }
 
 body.dark-mode .adobe {
-  background-image: url('/media/adobe_logo_dark.svg');
+  background-image: url('media/adobe_logo_dark.svg');
 }
 
 body.dark-mode .visual {
-  background-image: url('/media/visual_logo_dark.svg');
+  background-image: url('media/visual_logo_dark.svg');
 }
 
 /*text contraire*/
