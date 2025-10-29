@@ -548,6 +548,7 @@ body.dark-mode button:hover {
 }
 
 @media (max-width: 768px) {
+  /* menu burger */
   .burger {
     display: flex;
   }
@@ -726,7 +727,18 @@ body.dark-mode button:hover {
     font-weight: 200;
   }
 
+  /* section de contact */
   .section-contact {
-  margin-top: 10vh;
-}
+    padding: 20px 10px;
+  }
+
+  .section-contact h1 {
+    font-size: 12vw;
+  }
+
+  .section-contact h2,
+  .section-contact a {
+    font-size: 5vw;
+    word-wrap: break-word;
+  }
 }

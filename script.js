@@ -29,11 +29,13 @@ const app = Vue.createApp({
     const themeBtn = document.querySelector('.theme-toggle');
     const saveTheme = localStorage.getItem('darkMode');
 
+    // sauvé le theme dark mode
     if (saveTheme !== null) {
       this.isDarkMode = saveTheme === 'true';
       document.body.classList.toggle('dark-mode', this.isDarkMode);
     }
     
+    //ajout la class darkmode au click
     if (themeBtn) {
       themeBtn.addEventListener('click', () => {
         this.DarkMode = !this.DarkMode;
@@ -49,13 +51,14 @@ const app = Vue.createApp({
 
       const galleries = document.querySelectorAll('.gallery');
 
+      // cherche de la class gallerie
       if (galleries.length) {
         this.projets = data;
-        this.afficherProjets(this.projets, galleries);
-      } else {
-        const params = new URLSearchParams(window.location.search);
-        const id = params.get("id");
-        this.project = data.find(p => p.id == id);
+        this.afficherProjets(this.projets, galleries); //information des projet
+      } else { //pas de gallerie = sur la page d'un projet
+        const params = new URLSearchParams(window.location.search); //isole l'id de page
+        const id = params.get("id");// recherche de cette id
+        this.project = data.find(p => p.id == id);// match l'id du projet correspondant
       }
     } catch (error) {
       console.error("Erreur fetch JSON:", error);
@@ -71,7 +74,7 @@ const app = Vue.createApp({
         // l'image du projet
         div.style.backgroundImage = `url('${projet.image}')`;
 
-        // ouvrire la page d'un projet
+        // ouvrire la page d'un projet sur click de l'image
         div.addEventListener('click', () => {
           window.location.href = `projet_presentation.html?id=${projet.id}`;
         });
