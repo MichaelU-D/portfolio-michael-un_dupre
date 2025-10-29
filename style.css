@@ -377,6 +377,15 @@ body.dark-mode {
   background-position: top;
 }
 
+body.dark-mode a {
+  font-size: clamp(50px, 3vw, 100px);
+  font-family: Jost;
+  font-weight: 200;
+  color: #D9D9D9;
+  margin: 0px;
+  text-decoration: none;
+}
+
 /*bouton contraire*/
 body.dark-mode .accueil {
   background-image: url('media/btn_acc_hover.svg');
